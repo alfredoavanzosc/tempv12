@@ -1,0 +1,323 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* mercadoit_custom
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-24 09:47+0000\n"
+"PO-Revision-Date: 2019-10-24 09:47+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: mercadoit_custom
+#: model_terms:ir.ui.view,arch_db:mercadoit_custom.report_invoice_document_inh_mercadoit2
+msgid "<span>\n"
+"                        <strong>SERIAL NUMBERS DETAIL</strong>\n"
+"                    </span>\n"
+"                    <br/>\n"
+"                    <br/>"
+msgstr "<span>\n"
+"                        <strong>DETALLE NÚMEROS DE SERIE</strong>\n"
+"                    </span>\n"
+"                    <br/>\n"
+"                    <br/>"
+
+#. module: mercadoit_custom
+#: model_terms:ir.ui.view,arch_db:mercadoit_custom.report_invoice_document_inh_mercadoit2
+msgid "<span>Description</span>"
+msgstr "<span>Descripción</span>"
+
+#. module: mercadoit_custom
+#: model_terms:ir.ui.view,arch_db:mercadoit_custom.report_invoice_document_inh_mercadoit2
+msgid "<span>Lots</span>"
+msgstr "Lotes"
+
+#. module: mercadoit_custom
+#: model_terms:ir.ui.view,arch_db:mercadoit_custom.report_purchaseorder_document_inh_mercadoit
+msgid "<strong>Amount</strong>"
+msgstr "<strong>Monto</strong>"
+
+#. module: mercadoit_custom
+#: model_terms:ir.ui.view,arch_db:mercadoit_custom.report_invoice_document_inh_mercadoit
+msgid "<strong>Bank Account:</strong>"
+msgstr "<strong>Cuenta bancaria:</strong>"
+
+#. module: mercadoit_custom
+#: model_terms:ir.ui.view,arch_db:mercadoit_custom.report_purchaseorder_document_inh_mercadoit
+msgid "<strong>Date Req.</strong>"
+msgstr "<strong>Fecha req.</strong>"
+
+#. module: mercadoit_custom
+#: model_terms:ir.ui.view,arch_db:mercadoit_custom.report_purchaseorder_document_inh_mercadoit
+msgid "<strong>Description</strong>"
+msgstr "<strong>Descripción</strong>"
+
+#. module: mercadoit_custom
+#: model_terms:ir.ui.view,arch_db:mercadoit_custom.report_purchaseorder_document_inh_mercadoit
+msgid "<strong>Qty</strong>"
+msgstr "<strong>Cant</strong>"
+
+#. module: mercadoit_custom
+#: model_terms:ir.ui.view,arch_db:mercadoit_custom.report_saleorder_document_inh_mercadoit
+msgid "<strong>Shipping address:</strong>"
+msgstr "<strong>Dirección de Envío</strong>"
+
+#. module: mercadoit_custom
+#: model_terms:ir.ui.view,arch_db:mercadoit_custom.report_purchaseorder_document_inh_mercadoit
+msgid "<strong>Shipping method:</strong>"
+msgstr "Método envío:"
+
+#. module: mercadoit_custom
+#: model_terms:ir.ui.view,arch_db:mercadoit_custom.report_purchaseorder_document_inh_mercadoit
+msgid "<strong>Total</strong>"
+msgstr "Total"
+
+#. module: mercadoit_custom
+#: model_terms:ir.ui.view,arch_db:mercadoit_custom.report_purchaseorder_document_inh_mercadoit
+msgid "<strong>Unit Price</strong>"
+msgstr "<strong>Precio Unidad</strong>"
+
+#. module: mercadoit_custom
+#: model_terms:ir.ui.view,arch_db:mercadoit_custom.copy_partner_form
+msgid "Accept"
+msgstr "Aceptar"
+
+#. module: mercadoit_custom
+#: model:ir.model,name:mercadoit_custom.model_account_analytic_group
+msgid "Analytic Categories"
+msgstr "Categorías analítica"
+
+#. module: mercadoit_custom
+#: model_terms:ir.ui.view,arch_db:mercadoit_custom.view_partner_form
+msgid "Business"
+msgstr ""
+
+#. module: mercadoit_custom
+#: model:ir.model.fields,field_description:mercadoit_custom.field_res_partner__business
+#: model:ir.model.fields,field_description:mercadoit_custom.field_res_users__business
+msgid "Businnes"
+msgstr "Negocio"
+
+#. module: mercadoit_custom
+#: model_terms:ir.ui.view,arch_db:mercadoit_custom.copy_partner_form
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: mercadoit_custom
+#: model_terms:ir.ui.view,arch_db:mercadoit_custom.view_partner_form
+msgid "Cards"
+msgstr "Tarjetas"
+
+#. module: mercadoit_custom
+#: model:ir.model.fields,field_description:mercadoit_custom.field_partner_data_copy__company_id
+msgid "Company"
+msgstr "Compañía"
+
+#. module: mercadoit_custom
+#: model:ir.model,name:mercadoit_custom.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: mercadoit_custom
+#: model_terms:ir.ui.view,arch_db:mercadoit_custom.copy_partner_form
+msgid "Copy Partner Data"
+msgstr ""
+
+#. module: mercadoit_custom
+#: model_terms:ir.ui.view,arch_db:mercadoit_custom.copy_partner_form
+msgid "Copy Partner Data for defined parameters?"
+msgstr ""
+
+#. module: mercadoit_custom
+#: model:ir.model,name:mercadoit_custom.model_partner_data_copy
+msgid "Copy Partner to company"
+msgstr ""
+
+#. module: mercadoit_custom
+#: model:ir.actions.act_window,name:mercadoit_custom.action_copy_partner_data
+msgid "Copy partner"
+msgstr "Copiar empresa"
+
+#. module: mercadoit_custom
+#: model:ir.model.fields,field_description:mercadoit_custom.field_partner_data_copy__create_uid
+#: model:ir.model.fields,field_description:mercadoit_custom.field_purchase_shipping_method__create_uid
+#: model:ir.model.fields,field_description:mercadoit_custom.field_res_partner_take_ous__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: mercadoit_custom
+#: model:ir.model.fields,field_description:mercadoit_custom.field_partner_data_copy__create_date
+#: model:ir.model.fields,field_description:mercadoit_custom.field_purchase_shipping_method__create_date
+#: model:ir.model.fields,field_description:mercadoit_custom.field_res_partner_take_ous__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: mercadoit_custom
+#: model:ir.model.fields,field_description:mercadoit_custom.field_purchase_shipping_method__name
+#: model:ir.model.fields,field_description:mercadoit_custom.field_res_partner_take_ous__name
+msgid "Description"
+msgstr "Descripción"
+
+#. module: mercadoit_custom
+#: model:ir.model.fields,field_description:mercadoit_custom.field_partner_data_copy__display_name
+#: model:ir.model.fields,field_description:mercadoit_custom.field_purchase_shipping_method__display_name
+#: model:ir.model.fields,field_description:mercadoit_custom.field_res_partner_take_ous__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: mercadoit_custom
+#: model:ir.model,name:mercadoit_custom.model_account_followup_report
+msgid "Follow-up Report"
+msgstr "Reporte de Seguimiento"
+
+#. module: mercadoit_custom
+#: model_terms:ir.ui.view,arch_db:mercadoit_custom.report_purchaseorder_document_inh_mercadoit
+msgid "For WW shipments, please declare the whole amount for customs!"
+msgstr "¡Para envíos WW, por favor declare la cantidad completa para clientes!"
+
+#. module: mercadoit_custom
+#: model:ir.model,name:mercadoit_custom.model_crm_lead_lost
+msgid "Get Lost Reason"
+msgstr "Ponga la razón de la perdida"
+
+#. module: mercadoit_custom
+#: model:ir.model.fields,field_description:mercadoit_custom.field_partner_data_copy__id
+#: model:ir.model.fields,field_description:mercadoit_custom.field_purchase_shipping_method__id
+#: model:ir.model.fields,field_description:mercadoit_custom.field_res_partner_take_ous__id
+msgid "ID"
+msgstr ""
+
+#. module: mercadoit_custom
+#: model:ir.model.fields,field_description:mercadoit_custom.field_res_partner__cards
+#: model:ir.model.fields,field_description:mercadoit_custom.field_res_users__cards
+msgid "Image"
+msgstr "Imagen"
+
+#. module: mercadoit_custom
+#: model_terms:ir.ui.view,arch_db:mercadoit_custom.view_partner_form
+msgid "Info"
+msgstr "Información"
+
+#. module: mercadoit_custom
+#: code:addons/mercadoit_custom/models/account_followup_report.py:11
+#: model:ir.model,name:mercadoit_custom.model_account_invoice
+#, python-format
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: mercadoit_custom
+#: model:ir.model.fields,field_description:mercadoit_custom.field_partner_data_copy____last_update
+#: model:ir.model.fields,field_description:mercadoit_custom.field_purchase_shipping_method____last_update
+#: model:ir.model.fields,field_description:mercadoit_custom.field_res_partner_take_ous____last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: mercadoit_custom
+#: model:ir.model.fields,field_description:mercadoit_custom.field_partner_data_copy__write_uid
+#: model:ir.model.fields,field_description:mercadoit_custom.field_purchase_shipping_method__write_uid
+#: model:ir.model.fields,field_description:mercadoit_custom.field_res_partner_take_ous__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: mercadoit_custom
+#: model:ir.model.fields,field_description:mercadoit_custom.field_partner_data_copy__write_date
+#: model:ir.model.fields,field_description:mercadoit_custom.field_purchase_shipping_method__write_date
+#: model:ir.model.fields,field_description:mercadoit_custom.field_res_partner_take_ous__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: mercadoit_custom
+#: model:ir.model.fields,field_description:mercadoit_custom.field_account_invoice__mandate_bank_id
+msgid "Mandate Bank"
+msgstr "Mandato banco"
+
+#. module: mercadoit_custom
+#: model_terms:ir.ui.view,arch_db:mercadoit_custom.external_layout_background_inh_mercadoit_custom
+msgid "Phone:"
+msgstr "Teléfono:"
+
+#. module: mercadoit_custom
+#: model:ir.model.fields,field_description:mercadoit_custom.field_purchase_order__print_taxes
+msgid "Print taxes"
+msgstr "Imprimir impuestos"
+
+#. module: mercadoit_custom
+#: model:ir.model,name:mercadoit_custom.model_purchase_order
+msgid "Purchase Order"
+msgstr "Pedido de compra"
+
+#. module: mercadoit_custom
+#: model:ir.model,name:mercadoit_custom.model_purchase_shipping_method
+msgid "Purchase shiping method"
+msgstr "Método envío compras"
+
+#. module: mercadoit_custom
+#: model_terms:ir.ui.view,arch_db:mercadoit_custom.purchase_shipping_method_form_view
+#: model_terms:ir.ui.view,arch_db:mercadoit_custom.res_partner_take_ous_form_view
+msgid "Purchase shipping method"
+msgstr "Método envío compra"
+
+#. module: mercadoit_custom
+#: model_terms:ir.ui.view,arch_db:mercadoit_custom.purchase_shipping_method_tree_view
+#: model_terms:ir.ui.view,arch_db:mercadoit_custom.res_partner_take_ous_tree_view
+msgid "Purchase shipping methods"
+msgstr "Métodos envío cmopras"
+
+#. module: mercadoit_custom
+#: model:ir.model,name:mercadoit_custom.model_sale_order
+msgid "Sale Order"
+msgstr "Pedido de venta"
+
+#. module: mercadoit_custom
+#: model:ir.model,name:mercadoit_custom.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Línea de pedido de venta"
+
+#. module: mercadoit_custom
+#: model:ir.model.fields,field_description:mercadoit_custom.field_account_analytic_group__user_id
+msgid "Salesperson"
+msgstr "Comercial"
+
+#. module: mercadoit_custom
+#: model_terms:ir.ui.view,arch_db:mercadoit_custom.purchase_shipping_method_search_view
+#: model_terms:ir.ui.view,arch_db:mercadoit_custom.res_partner_take_ous_search_view
+msgid "Search purchase shipping method"
+msgstr "Buscar método envío compra"
+
+#. module: mercadoit_custom
+#: model:ir.model.fields,field_description:mercadoit_custom.field_purchase_order__purchase_shipping_method
+#: model_terms:ir.ui.view,arch_db:mercadoit_custom.view_purchase_order_filter_inh_mercado
+msgid "Shipping method"
+msgstr "Método envío"
+
+#. module: mercadoit_custom
+#: model:ir.actions.act_window,name:mercadoit_custom.purchase_shipping_method_action
+#: model:ir.ui.menu,name:mercadoit_custom.purchase_shipping_method__menu
+msgid "Shipping methods"
+msgstr "Métodos envío"
+
+#. module: mercadoit_custom
+#: model:ir.model,name:mercadoit_custom.model_res_partner_take_ous
+msgid "Supplier take outs"
+msgstr "Proveedor take outs"
+
+#. module: mercadoit_custom
+#: model:ir.actions.act_window,name:mercadoit_custom.res_partner_take_outs_action
+#: model:ir.model.fields,field_description:mercadoit_custom.field_res_partner__take_outs_ids
+#: model:ir.model.fields,field_description:mercadoit_custom.field_res_users__take_outs_ids
+#: model:ir.ui.menu,name:mercadoit_custom.res_partner_take_outs_menu
+#: model_terms:ir.ui.view,arch_db:mercadoit_custom.view_partner_form
+msgid "Take outs"
+msgstr "Retiradas de material"
+
+#. module: mercadoit_custom
+#: model_terms:ir.ui.view,arch_db:mercadoit_custom.copy_partner_form
+msgid "or"
+msgstr "o"
+

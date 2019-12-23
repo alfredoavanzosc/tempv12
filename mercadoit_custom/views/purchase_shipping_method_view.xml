@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="purchase_shipping_method_tree_view" model="ir.ui.view">
+        <field name="name">purchase.shipping.method.tree.view</field>
+        <field name="model">purchase.shipping.method</field>
+        <field name="arch" type="xml">
+            <tree string="Purchase shipping methods">
+                <field name="name" />
+            </tree>
+        </field>
+    </record>
+    <record id="purchase_shipping_method_search_view" model="ir.ui.view">
+        <field name="name">purchase.shipping.method.search.view</field>
+        <field name="model">purchase.shipping.method</field>
+        <field name="arch" type="xml">
+            <search string="Search purchase shipping method">
+                <field name="name" />
+            </search>
+        </field>
+    </record>
+    <record id="purchase_shipping_method_form_view" model="ir.ui.view">
+        <field name="name">purchase.shipping.method.form.view</field>
+        <field name="model">purchase.shipping.method</field>
+        <field name="arch" type="xml">
+            <form string="Purchase shipping method">
+                <sheet>
+                    <group name="head" colspan="4">
+                        <field name="name" colspan="4" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="purchase_shipping_method_action" model="ir.actions.act_window">
+        <field name="name">Shipping methods</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">purchase.shipping.method</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem id="purchase_shipping_method__menu" name="Shipping methods"
+        action="purchase_shipping_method_action" parent="purchase.menu_purchase_config"
+        sequence="3" groups="base.group_erp_manager"/>
+</odoo>

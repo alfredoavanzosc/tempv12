@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="external_layout_background_inh_mercadoit_custom" inherit_id="web.external_layout_background">
+        <div class="float-left company_address" position="attributes">
+                <attribute name="style">font-size: 14px</attribute>
+        </div>
+        <div class="footer o_background_footer" position="attributes">
+                <attribute name="style">font-size: 9px</attribute>
+        </div>
+        <span t-field="company.partner_id" position="after">
+                Phone: <span t-field="company.partner_id.phone" />
+        </span>
+    </template>
+</odoo>

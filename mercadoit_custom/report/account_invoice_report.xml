@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_invoice_document_inh_mercadoit" inherit_id="account_payment_partner.report_invoice_payment_mode">
+        <t t-if="o.payment_mode_id and o.payment_mode_id.show_bank_account != 'no'" position="after">
+            <t t-if="o.mandate_bank_id">
+                <strong>Bank Account:</strong>
+                <t t-esc="o.mandate_bank_id.acc_number"/>
+            </t>
+        </t>
+        <t t-if="o.payment_mode_id and o.payment_mode_id.show_bank_account != 'no'" position="attributes">
+            <attribute name="t-if">o.payment_mode_id and o.payment_mode_id.show_bank_account != 'no' and not o.mandate_bank_id</attribute>
+        </t>
+    </template>
+    <template id="report_invoice_document_inh_mercadoit2" inherit_id="account.report_invoice_document">
+        <p name="comment" position="replace" />
+        <div id="qrcode" position="after">
+            <p t-if="o.type in ('out_invoice','out_refund')" style="page-break-after: always;"/>
+            <div class="row" t-if="o.type in ('out_invoice','out_refund')">
+                <div class="col-12 text-center">
+                    <span>
+                        <strong>SERIAL NUMBERS DETAIL</strong>
+                    </span>
+                    <br/>
+                    <br/>
+                </div>
+            </div>
+            <table  t-if="o.type in ('out_invoice','out_refund')" class="table table-sm o_main_table" name="invoice_line2_table">
+                <thead>
+                    <tr>
+                        <th class="text-left"><span>Description</span></th>
+                        <th class="text-left"><span>Lots</span></th>
+                    </tr>
+                </thead>
+                <tbody class="invoice_tbody">
+                    <t t-foreach="o.invoice_line_ids" t-as="line">
+                        <tr t-att-class="'bg-200 font-weight-bold o_line_section' if line.display_type == 'line_section' else 'font-italic o_line_note' if line.display_type == 'line_note' else ''">
+                            <td><span t-field="line.name"/></td>
+                            <td class="text-left">
+                                 <t t-foreach="line.lot_ids" t-as="lot">
+                                    <span t-field="lot.name"/>;<spam></spam>
+                                </t>
+                            </td>
+                        </tr>
+                    </t>
+                </tbody>
+            </table>
+            <p t-if="o.comment" name="comment">
+                <p style="page-break-after: always;"/>
+                <span t-field="o.comment"/>
+            </p>
+        </div>
+    </template>
+</odoo>

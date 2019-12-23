@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_purchaseorder_document_inh_mercadoit" inherit_id="purchase.report_purchaseorder_document">
+        <div t-if="o.date_order" position="after">
+            <div t-if="o.purchase_shipping_method" class="col-3 bm-2">
+                <strong>Shipping method:</strong>
+                <p t-field="o.purchase_shipping_method" class="m-0"/>
+            </div>
+        </div>
+        <p t-field="o.notes" position="before">
+            <strong>
+                <p>For WW shipments, please declare the whole amount for customs!</p>
+            </strong>
+        </p>
+        <table class="table table-sm"  position="attributes">
+            <attribute name="t-if">o.print_taxes</attribute>
+        </table>
+         <table class="table table-sm" position="after">
+            <table class="table table-sm" t-if="not o.print_taxes">
+                <tr class="border-black o_total">
+                    <td><strong>Total</strong></td>
+                    <td class="text-right">
+                        <span t-field="o.amount_untaxed"
+                            t-options='{"widget": "monetary", "display_currency": o.currency_id}'/>
+                    </td>
+                </tr>
+            </table>
+         </table>
+         <table class="table table-sm o_main_table" position="attributes">
+            <attribute name="t-if">o.print_taxes</attribute>
+         </table>
+         <table class="table table-sm o_main_table" position="after">
+            <table class="table table-sm o_main_table" t-if="not o.print_taxes">
+                <thead>
+                    <tr>
+                        <th><strong>Description</strong></th>
+                        <th class="text-center"><strong>Date Req.</strong></th>
+                        <th class="text-right"><strong>Qty</strong></th>
+                        <th class="text-right"><strong>Unit Price</strong></th>
+                        <th class="text-right"><strong>Amount</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr t-foreach="o.order_line" t-as="line">
+                        <td>
+                            <span t-field="line.name"/>
+                        </td>
+                        <td class="text-center">
+                            <span t-field="line.date_planned"/>
+                        </td>
+                        <td class="text-right">
+                            <span t-field="line.product_qty"/>
+                            <span t-field="line.product_uom.name" groups="uom.group_uom"/>
+                        </td>
+                        <td class="text-right">
+                            <span t-field="line.price_unit"/>
+                        </td>
+                        <td class="text-right">
+                            <span t-field="line.price_subtotal"
+                                t-options='{"widget": "monetary", "display_currency": o.currency_id}'/>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+         </table>
+    </template>
+</odoo>

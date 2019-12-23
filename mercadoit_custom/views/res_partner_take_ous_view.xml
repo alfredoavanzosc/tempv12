@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="res_partner_take_outs_tree_view" model="ir.ui.view">
+        <field name="name">res.partner.take.outs.tree.view</field>
+        <field name="model">res.partner.take.outs</field>
+        <field name="arch" type="xml">
+            <tree string="Purchase shipping methods">
+                <field name="name" />
+            </tree>
+        </field>
+    </record>
+    <record id="res_partner_take_outs_search_view" model="ir.ui.view">
+        <field name="name">res.partner.take.outs.search.view</field>
+        <field name="model">res.partner.take.outs</field>
+        <field name="arch" type="xml">
+            <search string="Search purchase shipping method">
+                <field name="name" />
+            </search>
+        </field>
+    </record>
+    <record id="res_partner_take_outs_form_view" model="ir.ui.view">
+        <field name="name">res.partner.take.outs.form.view</field>
+        <field name="model">res.partner.take.outs</field>
+        <field name="arch" type="xml">
+            <form string="Purchase shipping method">
+                <sheet>
+                    <group name="head" colspan="4">
+                        <field name="name" colspan="4" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="res_partner_take_outs_action" model="ir.actions.act_window">
+        <field name="name">Take outs</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">res.partner.take.outs</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem id="res_partner_take_outs_menu" name="Take outs"
+        action="res_partner_take_outs_action" parent="purchase.menu_purchase_config"
+        sequence="5" groups="base.group_erp_manager"/>
+</odoo>

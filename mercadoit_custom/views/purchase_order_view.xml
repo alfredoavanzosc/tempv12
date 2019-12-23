@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record model="ir.ui.view" id="purchase_order_form_inh_mercado">
+        <field name="name">purchase.order.form.inh.mercado</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.purchase_order_form" />
+        <field name="arch" type="xml">
+         <field name="currency_id" position="after">
+            <field name="purchase_shipping_method" />
+         </field>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="purchase_order_tree_inh_mercado">
+        <field name="name">purchase.order.tree.inh.mercado</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.purchase_order_tree" />
+        <field name="arch" type="xml">
+         <field name="origin" position="after">
+            <field name="purchase_shipping_method" />
+         </field>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="view_purchase_order_filter_inh_mercado">
+        <field name="name">view.purchase.order.filter.inh.mercado</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.view_purchase_order_filter" />
+        <field name="arch" type="xml">
+         <field name="user_id" position="after">
+            <field name="purchase_shipping_method" />
+         </field>
+         <filter name="expected_date" position="after">
+            <filter string="Shipping method" name="group-shipping-method" domain="[]" context="{'group_by':'purchase_shipping_method'}"/>
+         </filter>
+        </field>
+    </record>
+</odoo>

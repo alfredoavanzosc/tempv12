@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_purchase_shipping_method_user,purchase.shipping.method,mercadoit_custom.model_purchase_shipping_method,base.group_user,1,0,0,0
+access_purchase_shipping_method_manager,purchase.shipping.method,mercadoit_custom.model_purchase_shipping_method,base.group_erp_manager,1,1,1,1
+access_res_partner_take_outs_user,res.partner.take.outs,mercadoit_custom.model_res_partner_take_outs,base.group_user,1,0,0,0
+access_res_partner_take_outs_manager,res.partner.take.outs,mercadoit_custom.model_res_partner_take_outs,base.group_erp_manager,1,1,1,1

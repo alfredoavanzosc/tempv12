@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record model="ir.ui.view" id="view_partner_form">
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form" />
+        <field name="arch" type="xml">
+            <page name="sales_purchases" position="after">
+                <page name="page-info" string="Info"
+                    attrs="{'invisible': [('supplier', '=', False)]}">
+                    <group name="group-page-info">
+                        <group name="group1-page-info">
+                            <separator string="Cards"  />
+                            <field name="cards" widget="image" class="oe_avatar" nolabel="1"/>
+                        </group>
+                        <group name="group2-page-info" />
+                    </group>
+                    <separator string="Take outs" colspan="4" />
+                    <field name="take_outs_ids" nolabel="1" colspan="4"/>
+                    <separator string="Business" colspan="4" />
+                    <field name="business" nolabel="1" colspan="4" />
+                </page>
+            </page>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="view_res_partner_filter">
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_res_partner_filter" />
+        <field name="arch" type="xml">
+            <field name="parent_id" position="after">
+                <field name="take_outs_ids" />
+            </field>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="view_partner_tree">
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_tree" />
+        <field name="arch" type="xml">
+            <field name="email" position="after">
+                <field name="take_outs_ids" widget="many2many_tags"/>
+                <field name="business" />
+            </field>
+        </field>
+    </record>
+</odoo>
